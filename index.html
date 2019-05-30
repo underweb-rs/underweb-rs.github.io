@@ -12509,11 +12509,7 @@ html {
 }
 
 </style>		
-
-
-.factory-flag{ visibility: hidden; }
-</style>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 	</head>
 	<body class="state1 background-100-e">
 		<div class="page-border bottom colors-e background-solid"><a href="index.html#top" class="hover-effect">To <span class="highlight">Top</span></a></div>
@@ -12832,35 +12828,7 @@ By following this approach, we can determine the best solutions and think of the
 		<script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 		<script src="bower_components/textillate/jquery.textillate.js"></script>
 		<script src="lib/prism/prism.js"></script>
-		<script>
-		(function()
-		{
-			var disableMobileAnimations = true;
-			var isWin = navigator.appVersion.indexOf("Win") !== -1;
-			if (isWin) $('html').addClass('win');
-			var ua = navigator.userAgent.toLowerCase();
-			var isChrome = ua.indexOf('chrome') > -1;
-			if (isChrome) $('html').addClass('chrome');
-			var isAndroidBrowser4_3minus = ((ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('android ') > -1 && ua.indexOf('applewebkit') > -1) && !(ua.indexOf('chrome') > -1));
-			if (isAndroidBrowser4_3minus) $('html').addClass('android-browser-4_3minus');
-			var isSafari = !isChrome && ua.indexOf('safari') !== -1;
-			if (isSafari) $('html').addClass('safari');
-			var isMobile = false; //Change false to Modernizr.touch if you want to disable animations on touchscreen devices;
-			if (isMobile)
-			{
-				$('html').addClass('mobile');
-				if (disableMobileAnimations) $('html').addClass('poor-browser');
-			}
-			else
-			{
-				$('html').addClass('non-mobile');
-			}
-			if (isWin && isSafari)
-			{
-				$('html').addClass('flat-animation');
-			}
-		})();
-		</script>
+		
 		<script src="scripts/script-bundle.js"></script>
 		<script>
 		if (Function('/*@cc_on return document.documentMode===9@*/')())
