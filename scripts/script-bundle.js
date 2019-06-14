@@ -2153,7 +2153,7 @@ module.exports = function(){
 		var isMobile = tools.isMobile;
 		var v=document.createElement('video');
 		var canMP4 = v.canPlayType ? v.canPlayType('video/mp4') : false;
-		return canMP4 && !isMobile;
+		return canMP4;
 	})();
 	if( !isPlayVideo ){
 		$videoBgs.each(function(){
